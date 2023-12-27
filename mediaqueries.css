@@ -1,0 +1,113 @@
+@media screen and (max-width: 1400px){
+    #Profile { 
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-container {
+        flex-wrap: wrap;
+    }
+ 
+    #Contact {
+        height: fit-content;
+    }
+}
+
+@media  screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #Experience, .experience-detail-container{
+        margin-top: 2rem;
+    }  
+    #Profile, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+    margin: 0 5%;
+    }
+    .section_pic-container {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto 2rem;
+    }
+    .about-container{
+        margin-top: 0;
+    }
+    .section_pic-container, .about-pic {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #Contact,
+    footer {
+      height: 40vh;
+    }
+    #Profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-container,
+    .details-container,
+    .button-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-box-container {
+      margin: 0;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .logo {
+      width: 50%;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .about-pic{
+        width: 300px;
+        height: 300px;
+    }
+    .section_pic-container {
+      width: auto;
+      height: 50vw;
+      justify-content: center;
+    }
+    .section_text_p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
+    }
+    footer p {
+        font-size: 0.75rem;
+    }
+
+  }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -22,6 +23,21 @@
             </ul>
         </div>    
     </nav>
+    <nav id="hamburger-nav">      
+        <img class="logo" src="asset/logo.png" onclick="location.href='#Home'">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#About" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>           
+            <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
 
     <section id="Profile">
         <div class="section_pic-container">
@@ -60,13 +76,13 @@
                 <div class="details-container">
                     <img src="asset/experience.png" class="icon"/>
                     <h3>Experience</h3>
-                    <p>7+ years </br>Dot Net Developer</p>
+                    <p>7+ years </br>C# Dot Net Developer</p>
                 </div>
                 <div class="details-container">
                     <img src="asset/education.png" class="icon"/>
                     <h3>Education</h3>
-                    <p>Bacholar of Science Information System</p>
-                    <p>Stonybrook University, NY 40324</p>
+                    <p>BS on Information System</p>
+                    <p>Stonybrook University, NY.</p>
                 </div>
                 <div class="details-container">
                     <img src="asset/experience.png" class="icon"/>
@@ -77,7 +93,7 @@
                
             </div>
             <div >
-                <p class="section-text">I am a Full Stack Dot Net Developer with 7+ years of experience. I hold a Bachelor of Science degree in Information Systems from Stony Brook University, NY. I am an employee of Infosys Pvt. Ltd. and currently working on one of its client company Toyota as a dot net Application developer and support. I investigate the incidents, debug code, develop fix, perform test, and deploy it on Sub Prod and Prod environment within the SLA timeframe. I also collabrate with Business Owner, internal IS team and external vendors to design and implement the new features. I use tools like Visual Studio, SQL Server managements, Postman, PgAdmin, CLI, GitHub, JIRA, Tera Term, Azuere Console, AWS Console, 1ts Console etc. to perform my duties. I have expertise on different programming languages like C Sharp, SQL, HTML, CSS, Javascript, Angular, Python etc. I also have good experience working with technologies like Dot Net Framework, MVC, Web Form, Web API, Windows Services, Web Services, Console job, Windows Task Schedular, Enitity Framework, FTP, SFTP, SMTP, Log4Net, IIS  etc. I have worked and supported various applications hosted on On-Premise and Azure Cloud. I also have extensive knowledge AWS services. Recently, I have earned AWS Cloud Practitioner certificate and Azure Cloud Fundamentals certificate. I am currently working on getting the AWS Developer Associate certificate and have plan of getting AWS DevOps Engineer Professional by next year.</p>
+                <p class="section-text">I am a Full Stack Dot Net Developer with 7+ years of experience. I hold a Bachelor of Science degree in Information Systems from Stony Brook University, NY. I am an employee of Infosys Pvt. Ltd. and currently working on one of its client company Toyota as a dot net Application developer and support. I investigate the incidents, debug code, develop fix, perform test, and deploy it on Sub Prod and Prod environment within the SLA timeframe. I also collabrate with Business Analyst, internal IS team and external vendors to design and implement the new features. I utilize the tools like Visual Studio, SQL Server managements, Postman, PgAdmin, CLI, GitHub, JIRA, Tera Term, Azuere Console, AWS Console, Service Now Console etc. to perform my duties. I have expertise on different programming languages like C Sharp, SQL, HTML, CSS, Javascript, Angular, Python etc. I also have good experience working with technologies like Dot Net Framework, MVC, Web Form, Web API, Windows Services, Web Services, Console job, Windows Task Schedular, Enitity Framework, FTP, SFTP, SMTP, Log4Net, IIS  etc. I have worked and supported various applications hosted on On-Premise and Azure Cloud. I also have extensive knowledge of AWS services. Recently, I have earned AWS Cloud Practitioner certificate and Azure Cloud Fundamentals certificate. I am currently working on getting the AWS Developer Associate certificate and have plan of getting AWS DevOps Engineer Professional by next year.</p>
             </div>
         </div>
         <div>
@@ -273,5 +289,6 @@
         </nav>
         <p>Copyright &#169; 2023 Sange Sherpa. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
